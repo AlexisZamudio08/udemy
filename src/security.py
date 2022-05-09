@@ -11,7 +11,3 @@ def identity(payload):
     user_id = payload['identity']
     user = User(user_id, '', '')
     return user.find_by_id()
-
-    #user = User.find_by_id(user_id)
-    #user = next(user, None)
-    #return user
